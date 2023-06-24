@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Pretendard-Regular';
+
+}
+
+
+#ore_logo_home {
+
+    width: 290px;
+
+}
+.header_ctn{
+    width:1500px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_ctn a {
+    text-decoration: none;
+}
+.header_ctn span {
+    margin: 0px 7px;
+}
+
+.header_ctn div {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+}

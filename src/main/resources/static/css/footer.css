@@ -1,0 +1,41 @@
+.footer_ctn {
+    height: 230px;
+    display: flex;
+    background-color: #FDEDCF;
+}
+
+#ore_logo_mini{
+    width: 170px;
+}
+
+#insta_logo{
+    width: 33px;
+}
+.footer_ctn div > div{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    height:130px;
+    justify-content: space-between;
+}
+
+
+.footer_ctn div > div:first-child{
+
+}
+
+.footer_ctn div > div:last-child{
+
+
+    align-items: flex-end;
+}
+
+.footer_ctn div{
+    width:1400px;
+    margin:auto;
+    display: flex;
+}
+
+.footer_ctn a {
+    text-decoration: none;
+}
