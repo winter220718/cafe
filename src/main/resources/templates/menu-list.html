@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<tr th:each="menu : ${menu}">
+    <td th:text="${menu.menuNo}"></td>
+    <td th:text="${menu.menuName}"></td>
+    <td th:text="${menu.menuPrice}"></td>
+</tr>
+
+</body>
+</html>
