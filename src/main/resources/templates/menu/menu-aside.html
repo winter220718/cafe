@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ore coffee house - menu</title>
-    <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu-aside.css" />
 </head>
 <body>
 
@@ -12,7 +12,16 @@
 
 <div class="menu_img_ctn"><img id="menu_pg_bn" src="../images/menu_pg_bn.png" alt=""></div>
 
+<div class="menu_ctn">
 
+    <div class="aside_ctn" >
+        <div th:each="ctg : ${ctg}">
+            <a th:href="@{/menu/ctg(ctgNo=${ctg.ctgNo})}" th:text="${ctg.ctgName}"></a>
+        </div>
+    </div>
+
+    <div class="menu"></div>
+</div>
 
 
 <div th:replace="/footer :: footer"></div>

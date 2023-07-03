@@ -1,0 +1,35 @@
+#menu_pg_bn{
+    height: 310px;
+}
+
+.menu_img_ctn {
+    margin-top: 86px;
+
+}
+
+.aside_ctn {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+
+    width: 17%;
+}
+
+.aside_ctn a{
+    text-decoration: none;
+    width:fit-content;
+    font-weight: bold;
+
+}
+.menu_ctn {
+    margin: auto;
+    width: 1550px;
+    height: 300px;
+    display: flex;
+}
+
+.menu{
+    width: 80%;
+}
+

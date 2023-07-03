@@ -19,7 +19,7 @@ public class MenuController {
         this.menuRepository = menuRepository;
     }
 
-    @GetMapping("/test")
+    @GetMapping("/menu")
     public String byCtg(Model model, Long ctgNo) {
 
         model.addAttribute("menu", menuRepository.findAll());

@@ -13,10 +13,5 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/menu")
-    public String menu(Model model) {
-
-        return "menu";
-    }
 
 }
