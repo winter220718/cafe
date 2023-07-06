@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ore coffee house - menu</title>
-    <link rel="stylesheet" type="text/css" href="../css/menu-aside.css" />
-</head>
-<body>
+<link rel="stylesheet" href="../css/menu-aside.css">
 
-<div th:replace="/header :: header"></div>
+<div class="menu_img_ctn">
+    <img id="menu_pg_bn" src="../images/menu_pg_bn.png" alt="">
 
-
-<div class="menu_img_ctn"><img id="menu_pg_bn" src="../images/menu_pg_bn.png" alt=""></div>
-
-<div class="menu_ctn">
-
-    <div class="aside_ctn" >
-        <div th:each="ctg : ${ctg}">
-            <a th:href="@{/menu/ctg(ctgNo=${ctg.ctgNo})}" th:text="${ctg.ctgName}"></a>
-        </div>
+    <div class="menu_img_text_ctn">
+        <div th:text="${ctg_text.ctgName}" class="ctg_name"></div>
+        <div th:text="${ctg_text.ctgCn}" class="ctg_cn"></div>
     </div>
 
-    <div class="menu"></div>
 </div>
 
+<div class="menu_wrap">
 
-<div th:replace="/footer :: footer"></div>
-</body>
-</html>
+    <div class="menu_ctn">
+        <div th:each="ctg : ${ctg}" >
+            <div>
+                <a th:href="@{/menu/ctg(no=${ctg.ctgNo})}" th:text="${ctg.ctgName}"></a>
+            </div>
+            <div class="menu_active"></div>
+        </div>
+    </div>
+        <div class="menu">
+            <img src="../images/menu_pic/latte.png" alt="">
+
+        </div>
+</div>

@@ -18,4 +18,6 @@ public class CategoryService {
     public Iterable<Category> getEntitiesByCtgNo(Long ctgNo) {
         return categoryRepository.findAllById(Collections.singletonList(ctgNo));
     }
+
+
 }
