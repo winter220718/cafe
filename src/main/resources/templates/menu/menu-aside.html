@@ -17,11 +17,20 @@
             <div>
                 <a th:href="@{/menu/ctg(no=${ctg.ctgNo})}" th:text="${ctg.ctgName}"></a>
             </div>
-            <div class="menu_active"></div>
+<!--            <div class="menu_active"></div>-->
         </div>
     </div>
         <div class="menu">
-            <img src="../images/menu_pic/latte.png" alt="">
-
+            <div class="menu_ctg">
+                <div class="menu_ctg_name" th:text="${ctg_text.ctgName}"></div>
+                <div class="menu_ctg_rm" th:text="${ctg_text.ctgRm}"></div>
+            </div>
+            <div class="menu_each_img_ctn">
+                <div class="menu_each" th:each="menu : ${menu}">
+                    <img class="menu_img" th:src="${menu.menuImage}" alt=""/>
+                    <div th:text="${menu.menuName}"></div>
+                    <div th:text="${#numbers.formatDecimal(menu.menuPrice, 0, 'COMMA', 0, 'POINT')}"></div>
+                </div>
+            </div>
         </div>
 </div>

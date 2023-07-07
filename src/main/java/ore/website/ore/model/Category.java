@@ -1,6 +1,7 @@
 package ore.website.ore.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "CATEGORY")
@@ -17,6 +18,17 @@ public class Category {
 
     @Column(name="CTG_RM")
     private String ctgRm;
+
+    @OneToMany(mappedBy= "ctgNo")
+    private List<Menu> menu;
+
+    public List<Menu> getMenu() {
+        return menu;
+    }
+
+    public void setMenu(List<Menu> menu) {
+        this.menu = menu;
+    }
 
     public Long getCtgNo() {
         return ctgNo;

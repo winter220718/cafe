@@ -60,8 +60,9 @@ a {
 }
 
 .menu{
-    border: solid black 1px;
+    /*border: solid black 1px;*/
     width:1000px;
+    margin-bottom:150px;
 
 }
 
@@ -72,4 +73,44 @@ a {
 
 .menu img {
     width: 190px;
+}
+
+.menu_ctg_name {
+    font-weight: 700;
+}
+
+.menu_ctg{
+    margin-top: 30px;
+    margin-left: 16px;
+}
+
+.menu_ctg_rm {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.menu_each_img_ctn{
+    margin-top: 18px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.menu_each{
+font-size:15px;
+margin: 15px;
+}
+
+.menu_each div{
+width: 190px;
+text-align: center;
+}
+
+.menu_each>div:first-child{
+margin-top: 6px;
+}
+
+.menu_each>div:last-child{
+margin-top:3px;
 }

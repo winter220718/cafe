@@ -15,9 +15,5 @@ public class CategoryService {
         this.categoryRepository = categoryRepository;
     }
 
-    public Iterable<Category> getEntitiesByCtgNo(Long ctgNo) {
-        return categoryRepository.findAllById(Collections.singletonList(ctgNo));
-    }
-
 
 }
