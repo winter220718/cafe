@@ -7,29 +7,34 @@
 
 }
 
-
-#ore_logo_home {
-    width: 290px;
-}
-
 .header_ctn{
     width:1500px;
     margin: auto;
     margin-top: 70px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.header_ctn a {
-    text-decoration: none;
-    color:black;
-}
-.header_ctn span {
-    margin: 0px 7px;
 }
 
-.header_ctn div {
-    display: flex;
-    justify-content: center;
-    width: 290px;
+#ore_logo_home {
+margin:auto;
+width:340px;
+}
+
+.header_ctn span {
+margin:0px 7px;
+}
+
+.logo_ctn {
+width: fit-content;
+margin: auto;
+}
+a {
+text-decoration: none;
+color:black;
+}
+
+.menu_ctn {
+display:flex;
+justify-content :flex-end;
+align-items:right;
+margin-top: -50px;
 }

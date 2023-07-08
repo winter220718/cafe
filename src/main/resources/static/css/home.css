@@ -6,3 +6,11 @@
     width: auto;
     background-color: antiquewhite;
 }
+
+.carousel-inner{
+    height:500px;
+}
+
+#carouselExampleIndicators{
+margin-top: 80px;
+}
