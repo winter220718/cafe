@@ -4,6 +4,7 @@ height: 40px;
 border:1.2px solid gray;
 opacity: 70%;
 border-radius: 5px;
+padding-left: 10px;
 }
 
 .join_ctn>div{
@@ -35,6 +36,10 @@ width:fit-content;
 bold{
 color:#EA5234;
 
+}
+
+.ctn_tt{
+font-size: 14px;
 }
 
 .please{
