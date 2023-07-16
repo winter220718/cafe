@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ore coffee house - 공지사항</title>
+</head>
+<body>
+
+<th:block th:include="/header.html"></th:block>
+<link rel="stylesheet" href="../css/notice.css?after">
+<div class="notice_ctn">
+
+
+    <h2>공지사항</h2>
+
+    <div class="notice_search_ctn">
+        <form action="">
+
+            <input class="input_ctn" type="text" placeholder="검색어를 입력하세요.">
+            <input class="search_btn" type="submit" value="검색">
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th style="width: 5%;">번호</th>
+            <th style="width: 65%; text-align: left">제목</th>
+            <th style="width: 15%;">작성자</th>
+            <th style="width: 10%;">작성일</th>
+            <th style="width: 5%;">조회</th>
+        </tr>
+        <tr th:each="notice : ${notice}">
+            <td th:text="${notice.noticeNo}"></td>
+            <td style="text-align: left" ><a th:href="@{/notice(no=${notice.noticeNo})}" th:text="${notice.noticeTitle}"></a></td>
+            <td th:text="${notice.member.memName}"></td>
+            <td th:text="${notice.noticeDate}"></td>
+            <td th:text="${notice.noticeHit}"></td>
+        </tr>
+    </table>
+
+    <!--pagination-->
+    <div>
+
+
+    </div>
+</div>

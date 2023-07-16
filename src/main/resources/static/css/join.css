@@ -5,6 +5,7 @@ border:1.2px solid gray;
 opacity: 70%;
 border-radius: 5px;
 padding-left: 10px;
+font-size:15px;
 }
 
 .join_ctn>div{
@@ -39,7 +40,8 @@ color:#EA5234;
 }
 
 .ctn_tt{
-font-size: 14px;
+font-size: 15px;
+margin: auto 0px;
 }
 
 .please{

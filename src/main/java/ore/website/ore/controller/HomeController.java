@@ -14,4 +14,9 @@ public class HomeController {
     }
 
 
+
+    @GetMapping("/ore-place")
+    public String orePlace() {
+        return "/place/ore-place";
+    }
 }

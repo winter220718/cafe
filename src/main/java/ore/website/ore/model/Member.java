@@ -13,8 +13,6 @@ import java.sql.Date;
 )
 public class Member {
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mem_no_generator")
     @Column(name= "MEM_NO")
