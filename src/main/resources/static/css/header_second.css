@@ -6,6 +6,9 @@
     font-family: 'Pretendard';
 
 }
+::selection {
+    background-color: #EA5234;
+}
 
 .header_ctn{
     width:1500px;

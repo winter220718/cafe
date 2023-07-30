@@ -7,7 +7,9 @@
 
 }
 
-
+::selection {
+    background-color: #EA5234;
+}
 #ore_logo_home {
     width: 290px;
 }
