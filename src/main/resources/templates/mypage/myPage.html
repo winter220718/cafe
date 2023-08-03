@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ore coffee house - 마이페이지</title>
+    <link rel="stylesheet" href="/css/myPage.css">
+</head>
+<body>
+<th:block th:include="/header.html"></th:block>
+
+<img class="mypage_bg" src="/images/mypage_bg.png" alt="">
+
+<div class="mypage_ctn">
+
+    <div class="left">
+        <div>
+            <img class="profile_img" src="/images/profile.png" alt="">
+            <span style="font-size:22px; margin-top:5px"><b>정수정</b>님</span>
+        </div>
+        <div class="mypage_bar"></div>
+    </div>
+
+    <div class="center">
+        <li class="title"><b>나의 정보</b></li>
+        <li>이메일 주소: wjd_tnwjd@naver.com</li>
+        <li>연락처: 010-4236-1724</li>
+        <li>생일: 2월 28일</li>
+        <button class="modify_myInfo">정보 수정하기</button>
+    </div>
+
+    <div class="right">
+        <div>
+            <li class="title"><b>나의 쿠폰 현황</b></li>
+            <li>현재 사용 가능한 쿠폰:<b style="color:#EA5234">&nbsp;2개</b></li>
+            <div class="coupon_ctn">
+                <div class="thk_text"><b>thanks coupon</b></div>
+                <div class="coupon">
+
+                </div>
+                <div class="dscrp_text">10개 적립시 아메리카노 1잔<br>20개 적립시 음료 1잔</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<th:block th:include="/footer.html"></th:block>
+</body>
+</html>

@@ -13,8 +13,6 @@ public class HomeController {
         return "home";
     }
 
-
-
     @GetMapping("/ore-place")
     public String orePlace() {
         return "/place/ore-place";
