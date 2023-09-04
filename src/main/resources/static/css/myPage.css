@@ -80,6 +80,8 @@ width: 282px;
 height: 512px;
 border:1px solid #38393b;
 text-align: center;
+display:flex;
+flex-direction: column;
 }
 
 .thk_text{
@@ -89,12 +91,25 @@ margin-top: 45px;
 }
 
 .coupon{
-height:65%;
-width:inherit;
+height:57%;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+margin-top: 50px;
 }
-
+.coupon>div {
+width: 60px;
+height: 19px;
+display:flex;
+flex-direction:column;
+justify-content: center;
+}
 .dscrp_text{
 font-weight: 200;
-font-size: 17px;
+font-size: 15px;
 line-height:1.7;
+}
+
+.coupon_text {
+font-size:13px;
 }

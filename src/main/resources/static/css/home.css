@@ -1,5 +1,3 @@
-
-
 .header {
 
     height: 200px;
@@ -17,4 +15,50 @@ margin-top: 80px;
 
 .d-block w-100 {
     height:700px;
+}
+
+
+.main_notice_ctn_1{
+font-size:23px;
+margin: auto 3px;
+}
+
+/*공지사항 글자*/
+.main_notice_ctn_0{
+font-size:25px;
+font-weight:600;
+margin: auto 0px;
+}
+
+/*공지 제목*/
+.main_notice_ctn_1>span:first-child{
+margin-left: 15px;
+
+}
+
+/*날짜*/
+.main_notice_ctn_1>span:last-child{
+margin-left:10px;
+font-size: 17px;
+color:darkgrey;
+}
+
+.main_notice_ctn_2{
+font-size: 35px;
+margin-left: 420px;
+}
+
+
+.main_notice_ctn{
+display:flex;
+width:fit-content;
+margin:auto;
+margin-top:30px;
+}
+.main_notice_ctn_2 button{
+border:none;
+background-color:unset;
+}
+.main_notice_ctn_2>span:last-child>button{
+margin-left: 70px;
 }

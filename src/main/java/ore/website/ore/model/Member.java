@@ -28,7 +28,7 @@ public class Member {
     private String memPw;
 
     @Column(name = "MEM_BTH")
-    private Integer memBth;
+    private String memBth;
 
     @Column(name = "KAKAO_YN")
     private boolean kakaoYn;
@@ -68,11 +68,11 @@ public class Member {
         this.memPw = memPw;
     }
 
-    public Integer getMemBth() {
+    public String getMemBth() {
         return memBth;
     }
 
-    public void setMemBth(Integer memBth) {
+    public void setMemBth(String memBth) {
         this.memBth = memBth;
     }
 

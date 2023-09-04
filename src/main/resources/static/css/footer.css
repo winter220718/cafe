@@ -1,8 +1,10 @@
 .footer_ctn {
-    height: 230px;
+    height: 400px;
     display: flex;
-    background-color: #FDEDCF;
-    font-size: 13px;
+    background-color: #EA5234;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
 }
 
 #ore_logo_mini{
@@ -39,4 +41,5 @@
 
 .footer_ctn a {
     text-decoration: none;
+    color: white;
 }

@@ -35,7 +35,14 @@
             <div class="coupon_ctn">
                 <div class="thk_text"><b>thanks coupon</b></div>
                 <div class="coupon">
-
+                   <th:block th:each="num : ${#numbers.sequence(1,9)}">
+                       <div>/</div>
+                   </th:block>
+                    <div class="coupon_text">아메리카노</div>
+                    <th:block th:each="num : ${#numbers.sequence(1,9)}">
+                        <div>/</div>
+                    </th:block>
+                    <div class="coupon_text">음료</div>
                 </div>
                 <div class="dscrp_text">10개 적립시 아메리카노 1잔<br>20개 적립시 음료 1잔</div>
             </div>

@@ -17,7 +17,6 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-
     @GetMapping
     public String join() {
 
@@ -27,6 +26,7 @@ public class MemberController {
     @PostMapping
     public String signUp(@ModelAttribute("member") Member member) {
 
+        member.setMemBth(member.getMemBth().substring(5, 7) + member.getMemBth().substring(8, 10));
         memberService.joinMember(member);
 
         return "/login&join/signUp-success";
@@ -42,7 +42,7 @@ public class MemberController {
             member.setKakaoYn(true);
             member.setMemEmail(kakao_email);
             member.setMemName(kakao_name);
-            member.setMemBth(Integer.parseInt(kakao_bth));
+            member.setMemBth(kakao_bth);
 
             if(!memberService.existingMember(member)){
                 //이미 존재하는 회원일 경우

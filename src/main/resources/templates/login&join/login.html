@@ -1,1 +1,52 @@
-로긴
+<th:block th:include="/header.html"></th:block>
+<title>ore coffee house - 로그인하기</title>
+<link rel="stylesheet" href="../css/login.css?after">
+
+<div class="login_text">로그인</div>
+<form action="/login" method="post">
+    <div class="login_ctn">
+        <div>
+            <span class="ctn_tt">이메일<b>*</b></span>
+            <div>
+                <div>
+                    <input class="square" type="text" name="memEmail" placeholder="이메일">
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <span class="ctn_tt">비밀번호<b>*</b></span>
+            <div>
+                <div>
+                    <input class="square" type="password" name="memPw" placeholder="비밀번호" >
+                </div>
+            </div>
+        </div>
+        <div id="auto-login_ctn">
+            <input type="checkbox" id="auto-login">
+            <label for="auto-login" style=cursor:pointer>로그인 유지하기</label>
+        </div>
+
+        <input class="login_btn" type="submit" value="로그인하기">
+
+        <div id="another_mtd">
+            <div class="or">
+                <div class="or_bar"></div>
+                또는
+                <div class="or_bar"></div>
+            </div>
+            <div>카카오 계정으로 이용하실 수 있습니다.</div>
+        </div>
+
+        <a href="#" onclick="kakaoLogin();" id="kakao-login-btn">
+
+            <img class="kakao_login_btn" src="../images/kakao_login.png" alt="">
+        </a>
+
+    </div>
+</form>
+
+<script type="text/javascript" src="webjars/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="../javascript/join.js"></script>
