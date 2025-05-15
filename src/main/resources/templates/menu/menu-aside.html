@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../css/menu-aside.css">
+
+<div class="menu_img_ctn">
+    <img id="menu_pg_bn" src="../images/menu_pg_bn.png" alt="">
+
+    <div class="menu_img_text_ctn">
+        <div th:text="${ctg_text.ctgName}" class="ctg_name"></div>
+        <div th:text="${ctg_text.ctgCn}" class="ctg_cn"></div>
+    </div>
+
+</div>
+
+<div class="menu_wrap">
+
+    <div class="menu_ctn">
+        <div th:each="ctg : ${ctg}" >
+            <div>
+                <a th:href="@{/menu/ctg(no=${ctg.ctgNo})}" th:text="${ctg.ctgName}"></a>
+            </div>
+<!--            <div class="menu_active"></div>-->
+        </div>
+    </div>
+        <div class="menu">
+            <div class="menu_ctg">
+                <div class="menu_ctg_name" th:text="${ctg_text.ctgName}"></div>
+                <div class="menu_ctg_rm" th:text="${ctg_text.ctgRm}"></div>
+            </div>
+            <div class="menu_each_img_ctn">
+                <div class="menu_each" th:each="menu : ${menu}">
+                    <img class="menu_img" th:src="${menu.menuImage}" alt=""/>
+                    <div th:text="${menu.menuName}"></div>
+                    <div th:text="${#numbers.formatDecimal(menu.menuPrice, 0, 'COMMA', 0, 'POINT')}"></div>
+                </div>
+            </div>
+        </div>
+</div>

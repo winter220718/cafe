@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ore coffee house - <th:block th:text="${content.noticeTitle}"></title>
+</head>
+
+<th:block th:include="/header.html"></th:block>
+<link rel="stylesheet" href="../css/contents.css?after">
+<div class="contents_ctn">
+
+
+    <h2>공지사항</h2>
+    <div>
+        <div class="hello">
+            <div class="content_noticeTitle" th:text="${content.noticeTitle}"></div>
+            <div class="content_title_ctn">
+                <div class="content_title_ctn_div">
+                    <div th:text="${content.member.memName}"></div>
+                    <div></div>
+                    <div th:text="${content.noticeDate}"></div>
+                </div>
+                <div class="hit_text">조회수&nbsp;&nbsp;<th:block  th:text="${content.noticeHit}">></th:block></div>
+            </div>
+
+        </div>
+        <div class="helloo">
+             <div class="content_noticeCn" th:text="${content.noticeCn}"></div>
+        </div>
+        <div class="button_ctn">
+            <div class="goToList">
+                <a th:href="@{/notice(page=${pageNo})}" >목록</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>

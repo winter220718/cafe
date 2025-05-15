@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ore coffee house - 가입을 축하합니다</title>
+    <link rel="stylesheet" href="../css/signUp-success.css?after">
+</head>
+<body>
+
+<th:block th:include="/header.html"></th:block>
+
+<div class="welcome_ctn">
+    <div class="welcome_mem_name" th:text="${name}" ></div>님,<br>회원 가입을 환영합니다.
+</div>
+
+<div class="welcome_email_ctn">가입하신 이메일 아이디:
+<div th:text="${email}"></div>
+</div>
+
+<div class="welcome_btns">
+
+<button onclick="location.href='/login'">로그인하기</button>
+<button onclick="location.href='/home'">메인으로 이동</button>
+</div>

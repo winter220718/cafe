@@ -1,0 +1,37 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Pretendard';
+
+}
+
+::selection {
+    background-color: #EA5234;
+}
+#ore_logo_home {
+    width: 290px;
+}
+
+.header_ctn{
+    width:1500px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_ctn a {
+    text-decoration: none;
+    color:black;
+}
+.header_ctn span {
+    margin: 0px 7px;
+}
+
+.header_ctn div {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+}

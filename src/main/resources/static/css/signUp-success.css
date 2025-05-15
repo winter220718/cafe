@@ -1,0 +1,46 @@
+.welcome_btns{
+display: flex;
+flex-direction: row;
+margin:auto;
+width:fit-content;
+font-weight:100;
+}
+
+button {
+ width:120px;
+ height:45px;
+ margin:5px;
+}
+
+button:first-child{
+background-color:#EA5234;
+color: white;
+border: none;
+}
+
+
+button:last-child{
+border: 1px solid #EA5234;
+background-color:white;
+
+}
+
+.welcome_ctn{
+width:fit-content;
+margin:auto;
+font-size:30px;
+margin-top:205px;
+text-align:center;
+}
+
+.welcome_mem_name {
+color: #EA5234;
+}
+
+.welcome_email_ctn{
+font-weight:200;
+margin:55px auto;
+width:fit-content;
+
+}
+

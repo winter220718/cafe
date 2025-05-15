@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ore coffee house - 공지사항</title>
+</head>
+<body>
+
+<th:block th:include="/header.html"></th:block>
+<link rel="stylesheet" href="../css/notice.css?after">
+<div class="notice_ctn">
+
+
+    <h2>공지사항</h2>
+
+    <div class="notice_search_ctn">
+        <form action="">
+
+            <input class="input_ctn" type="text" placeholder="검색어를 입력하세요.">
+            <input class="search_btn" type="submit" value="검색">
+        </form>
+    </div>
+    <div class="table_ctn">
+        <table>
+
+            <tr>
+                <th style="width: 8%;">번호</th>
+                <th style="width: 57%; text-align: left">제목</th>
+                <th style="width: 15%;">작성자</th>
+                <th style="width: 12%;">작성일</th>
+                <th style="width: 8%;">조회</th>
+            </tr>
+            <tr th:each="notice : ${notice}">
+                <td th:text="${notice.noticeNo}"></td>
+                <td class="title" style="text-align: left" ><a th:href="@{/notice/contents(no=${notice.noticeNo})}" th:text="${notice.noticeTitle}"></a></td>
+                <td th:text="${notice.member.memName}"></td>
+                <td th:text="${notice.noticeDate}"></td>
+                <td th:text="${notice.noticeHit}"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--pagination-->
+    <div id="pagination">
+        <th:block th:if=${startPage!=1}>
+        <a class="move" th:href="@{/notice(page=${startPage}-1)}"><</a>
+        </th:block>
+        <th:block th:each="i : ${#numbers.sequence(startPage, endPage)}">
+            <a th:href="@{/notice(page=${i})}"><span th:text="${i}"></span></a>
+        </th:block>
+        <th:block th:if="${startPage < totalPage - (totalPage % 5)}">
+            <a class="move" th:href="@{/notice(page=${endPage}+1)}">></a>
+        </th:block>
+    </div>
+</div>

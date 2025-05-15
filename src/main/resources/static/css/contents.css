@@ -1,0 +1,90 @@
+h2 {
+margin: 60px auto;
+}
+
+
+.contents_ctn {
+width:1100px;
+margin:auto;
+display:flex;
+flex-direction: column;
+}
+
+.content_title_ctn{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+margin:10px 0px;
+}
+
+.content_title_ctn_div{
+width:fit-content;
+display:flex;
+
+}
+
+.content_title_ctn_div div:first-child{
+font-weight:200;
+}
+
+.content_title_ctn_div div:nth-child(2){
+height:15px;
+width:1px;
+margin: auto 10px;
+background-color:darkgray;
+}
+.content_title_ctn_div div:last-child{
+color:darkgray;
+font-weight:200;
+font-size:14px;
+margin: auto;
+}
+.hit_text {
+color:gray;
+font-size: 15px;
+font-weight: 200;
+}
+
+.content_noticeTitle {
+margin: 14px auto;
+font-size:17px;
+}
+
+.hello{
+border-top : 1px rgba(230, 230, 230, 1) solid;
+border-bottom: 1px rgba(230, 230, 230, 1) solid;
+padding:10px 0px;
+}
+
+.content_noticeCn{
+margin: 30px 0px 100px 0px;
+font-size:16px;
+font-weight:300;
+
+}
+
+.helloo{
+border-bottom: 1px rgba(230, 230, 230, 1) solid;
+}
+
+.goToList{
+
+background-color:white;
+border: 1px gray solid;
+margin: 25px auto;
+display:flex;
+width:100px;
+height: 35px;
+}
+
+.goToList>a{
+text-decoration: none;
+font-size:14px;
+font-weight:400;
+color: black;
+margin:auto;
+
+}
+.button_ctn{
+display:flex;
+}

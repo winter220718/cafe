@@ -1,0 +1,115 @@
+.mypage_bg {
+    width: 100%;
+    opacity: 0.3;
+    margin-top: -150px;
+    position: relative;
+    z-index: -1;
+}
+
+.mypage_ctn {
+width: 1300px;
+margin: -420px auto auto auto;
+box-shadow: 3px 18px 30px -15px black;
+background-color: white;
+height: 800px;
+display: flex;
+flex-direction: row;
+padding:55px;
+
+}
+
+.profile_img{
+
+width:120px;
+
+}
+
+.left {
+ width: 20%;
+
+
+
+}
+
+.left>div{
+display:flex;
+flex-direction: column;
+width: fit-content;
+margin: auto;
+align-items: center;
+}
+
+.mypage_bar {
+background-color: gray;
+opacity: 0.3;
+width: 1px;
+height: inherit;
+}
+.center {
+ width: 30%;
+
+}
+
+.right {
+width: 40%;
+
+}
+
+li {
+list-style:none;
+line-height:2.5;
+font-weight: 200;
+}
+
+.title{
+font-size: 20px;
+}
+
+.modify_myInfo{
+border: 1px solid #EA5234;
+border-radius:3px;
+background-color: white;
+color: #EA5234;
+margin-top: 15px;
+height:40px;
+width:137px;
+}
+
+.coupon_ctn{
+width: 282px;
+height: 512px;
+border:1px solid #38393b;
+text-align: center;
+display:flex;
+flex-direction: column;
+}
+
+.thk_text{
+font-size: 20px;
+color: #38393b;
+margin-top: 45px;
+}
+
+.coupon{
+height:57%;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+margin-top: 50px;
+}
+.coupon>div {
+width: 60px;
+height: 19px;
+display:flex;
+flex-direction:column;
+justify-content: center;
+}
+.dscrp_text{
+font-weight: 200;
+font-size: 15px;
+line-height:1.7;
+}
+
+.coupon_text {
+font-size:13px;
+}

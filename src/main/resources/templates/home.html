@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <title>ore coffee house - coffee & dessert</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css?after" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css?after" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/1.png"/>
+<body>
+
+<div th:replace="/header :: header"></div>
+
+<!--캐러셀-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../images/carousel/5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../images/carousel/6.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../images/carousel/7.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../images/carousel/8.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!--공지사항-->
+<div class="main_notice_ctn">
+    <div class="main_notice_ctn_0">
+        공지사항
+    </div>
+    <div class="main_notice_ctn_1">
+        <span><a>ore coffee house 방문 안내</a></span>
+        <span>2023.09.04</span>
+    </div>
+    <div class="main_notice_ctn_2">
+        <span><button onclick="location.href=''"><i class="bi bi-arrow-left-circle"></i></button></span>
+        <span><button onclick="location.href=''"><i class="bi bi-arrow-right-circle"></i></button></span>
+        <span><button onclick="location.href='/notice'"><i class="bi bi-plus-circle"></i></button></span>
+    </div>
+
+</div>
+
+<br><br><br>오레 홈페이지에 방문한걸 환영한다는 내용이나 보여주고 싶은 거<br><br><br>
+<br><br><br>환영합니다....<br><br><br>
+<br><br><br>오늘은 9월 4일이다...<br><br><br>
+
+
+<div th:replace="/footer :: footer"></div>
+<script type="text/javascript" src="../bootstrap/js/bootstrp.bundle.min.js"></script>
+</body>
+</html>
